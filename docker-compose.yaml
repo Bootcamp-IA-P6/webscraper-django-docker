@@ -1,0 +1,17 @@
+services:
+  web:
+    build: .
+    container_name: webscraper-server-1
+    volumes:
+      - .:/app
+      - ./screenshots:/app/screenshots
+    ports:
+      - "8000:8000"
+    depends_on:
+      - firefox  # Esto le dice a Docker que espere a que el navegador esté listo
+
+  firefox:
+    image: selenium/standalone-firefox:latest
+    shm_size: 2gb  # Evita que el navegador se bloquee por falta de memoria
+    ports:
+      - "4444:4444"

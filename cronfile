@@ -1,0 +1,2 @@
+*/5 * * * * /usr/local/bin/python /app/manage.py run_scraper >> /var/log/cron.log 2>&1
+
