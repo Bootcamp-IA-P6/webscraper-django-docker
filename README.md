@@ -79,6 +79,7 @@ Abre tu navegador en http://127.0.0.1:8000/admin e inicia sesión. En la secció
 El cambio de rumbo
 
 Originalmente, el proyecto estaba diseñado para extraer etiquetas <h1> genéricas de una web estática. Decidí llevarlo al siguiente nivel enfocándolo en un portal de empleo real (Startup Jobs).
+
 ¿Cómo lo hice?
 
     Rediseño de Modelos: Cambié el modelo inicial ScrapedData por uno llamado Job, añadiendo campos específicos como company (empresa) y url única para evitar ofertas duplicadas.
